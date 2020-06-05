@@ -113,7 +113,7 @@ export default function SignUp() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h3">
-          Edit Accounts
+          Add Account
         </Typography>  
 
 
@@ -174,14 +174,13 @@ export default function SignUp() {
 
 
           
-            <Grid item xs={12}>
+          <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 fullWidth
                 id="accountNo"
                 name="accountNo"
                 label="Account No"
-                //autoComplete="pnumber"
                 size="small"
                 //type="number"
               />
@@ -193,7 +192,6 @@ export default function SignUp() {
                 id="company"
                 name="company"
                 label="Company"
-                //autoComplete="address"
                 size="small"
               />
             </Grid>
@@ -203,8 +201,7 @@ export default function SignUp() {
                 fullWidth
                 id="currency"
                 name="currency"
-                label="Currency"
-                //autoComplete="address"
+                label="Currency eg: ZAR"
                 size="small"
               />
             </Grid>
@@ -215,8 +212,8 @@ export default function SignUp() {
                 id="shortDescription"
                 name="shortDescription"
                 label="Short description"
-                //autoComplete="address"
                 size="small"
+                inputProps={{ maxLength: 20}}
               />
             </Grid>
             <Grid item xs={12}>
@@ -226,8 +223,8 @@ export default function SignUp() {
                 id="longDescription"
                 name="longDescription"
                 label="Long description"
-                //autoComplete="address"
                 size="small"
+                inputProps={{ maxLength: 48}}
               />
             </Grid>
             <Grid item xs={12}>
@@ -237,18 +234,17 @@ export default function SignUp() {
                 id="reconAccount"
                 name="reconAccount"
                 label="Recon account"
-                //autoComplete="address"
                 size="small"
+                type="number"
               />
             </Grid>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 fullWidth
                 id="tbAssignment"
                 name="tbAssignment"
                 label="TB assignment"
-                //autoComplete="address"
                 size="small"
               />
             </Grid>
@@ -259,7 +255,6 @@ export default function SignUp() {
                 id="refAccount"
                 name="refAccount"
                 label="Reference account"
-                //autoComplete="address"
                 size="small"
                 type="number"
               />
@@ -271,7 +266,6 @@ export default function SignUp() {
                 id="referenceCompany"
                 name="referenceCompany"
                 label="Reference company"
-                //autoComplete="address"
                 size="small"
               />
             </Grid>
@@ -283,14 +277,13 @@ export default function SignUp() {
                 id="reason"
                 name="reason"
                 label="Reason for opening or blocking accounts"
-                //autoComplete="lname"
                 size="small"
               />
-            </Grid> 
+            </Grid>  */}
         </Grid>
 
 
-          <Typography component="h1" variant="h5"className={classes.typography} >
+          {/* <Typography component="h1" variant="h5"className={classes.typography} >
           Recon Information
           </Typography>
 
@@ -327,7 +320,6 @@ export default function SignUp() {
                   id="managerName"
                   name="managerName"
                   label="Manager name"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -339,7 +331,6 @@ export default function SignUp() {
                   id="managerPersonnelNumber"
                   name="managerPersonnelNumber"
                   label="Manager personnel number"
-                  //autoComplete="address"
                   required
                   size="small"
                   type="number"
@@ -352,7 +343,6 @@ export default function SignUp() {
                   id="sbuHeadName"
                   name="sbuHeadName"
                   label="SBU head name"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -364,7 +354,6 @@ export default function SignUp() {
                   id="sbuHeadPersonnelNumber"
                   name="sbuHeadPersonnelNumber"
                   label="SBU head personnel number"
-                  //autoComplete="address"
                   required
                   size="small"
                   type="number"
@@ -377,7 +366,6 @@ export default function SignUp() {
                   id="sbuName"
                   name="sbuName"
                   label="SBU name"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -390,7 +378,6 @@ export default function SignUp() {
                   id="reasonNotRecon"
                   name="reasonNotRecon"
                   label="Reason not reconciled/analysed:"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -402,7 +389,6 @@ export default function SignUp() {
                   id="analysed"
                   name="analysed"
                   label="Analysed "
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -414,7 +400,6 @@ export default function SignUp() {
                   id="reconciled"
                   name="reconciled"
                   label="Reconciled"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -441,7 +426,6 @@ export default function SignUp() {
                   id="onWorkingDay"
                   name="onWorkingDay"
                   label="OR on working day"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -453,7 +437,6 @@ export default function SignUp() {
                   id="busUse"
                   name="busUse"
                   label="Business use"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -465,7 +448,6 @@ export default function SignUp() {
                   id="busRules"
                   name="busRules"
                   label="Business rules"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -477,7 +459,6 @@ export default function SignUp() {
                   id="sourceData"
                   name="sourceData"
                   label="Source data"
-                  //autoComplete="address"
                   required
                   size="small"
                 />
@@ -559,7 +540,6 @@ export default function SignUp() {
                 id="uacfidPreparer"
                 name="uacfidPreparer"
                 label="UACFID Preparer"
-                //autoComplete="address"
                 size="small"
               />
             </Grid>
@@ -570,7 +550,6 @@ export default function SignUp() {
                 id="uacfidReviewer"
                 name="uacfidReviewer"
                 label="UACFID Reviewer"
-                //autoComplete="address"
                 size="small"
               />
             </Grid>
@@ -627,68 +606,111 @@ export default function SignUp() {
                 id="purposeOfAccount"
                 name="purposeOfAccount"
                 label="Purpose of the account"
-                //autoComplete="address"
                 size="small"
+                inputProps={{ maxLength: 48}}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 fullWidth
+                multiline
                 id="reconProcedure"
                 name="reconProcedure"
                 label="Reconciliation procedure"
-                //autoComplete="address"
                 size="small"
+                inputProps={{ maxLength: 200}}
               />
             </Grid>
 
 
-            <Grid item xs={12} >
-                <FormControl variant="outlined" size="small" fullWidth>
-                <InputLabel htmlFor="outlined-age-native-simple">Blackline template</InputLabel>
-                <Select
-                  native
-                  value={state.name}
-                  onChange={handleChange}
-                  label="blacklineTemplate"
-                  inputProps={{
-                    chooseBlacklineTemplate: 'chooseBlacklineTemplate',
-                    id: 'outlined-age-native-simple',
-                  }}
-                >
-                  <option aria-label="None" value="" />
-                  <option value="accruable">Accruable</option>
-                  <option value="amortizable">Amortizable</option>
-                  <option value="associatedAccounts">Associated Accounts</option>
-                  <option value="bankAccount">Bank Account</option>
-                  <option value="generalList">General List</option>
-                  <option value="scheduleList">Schedule List</option>
-                  <option value="subledgerMatch">Subledger Match</option>
-                  
-                </Select>
-                </FormControl>
+                <Grid item xs={12} >
+                    <FormControl variant="outlined" size="small" fullWidth>
+                    <InputLabel htmlFor="outlined-age-native-simple">Blackline template</InputLabel>
+                    <Select
+                    native
+                    value={state.name}
+                    onChange={handleChange}
+                    label="blacklineTemplate"
+                    inputProps={{
+                        chooseBlacklineTemplate: 'chooseBlacklineTemplate',
+                        id: 'outlined-age-native-simple',
+                    }}
+                    >
+                    <option aria-label="None" value="" />
+                    <option value="accruable">Accruable</option>
+                    <option value="amortizable">Amortizable</option>
+                    <option value="associatedAccounts">Associated Accounts</option>
+                    <option value="bankAccount">Bank Account</option>
+                    <option value="generalList">General List</option>
+                    <option value="scheduleList">Schedule List</option>
+                    <option value="subledgerMatch">Subledger Match</option>
+                    
+                    </Select>
+                    </FormControl>
               </Grid>
 
+            <Grid item xs={12} >
+                    <FormControl variant="outlined" size="small" fullWidth>
+                    <InputLabel htmlFor="outlined-age-native-simple">Blackline Team</InputLabel>
+                    <Select
+                    native
+                    value={state.name}
+                    onChange={handleChange}
+                    label="blacklineTeam"
+                    inputProps={{
+                        chooseBlacklineTeam: 'chooseBlacklineTeam',
+                        id: 'outlined-age-native-simple',
+                    }}
+                    >
+                    <option aria-label="None" value="" />
+                    <option value="G-FinExe">G-Finance Executive</option>
+                    <option value="LHLCON">Liberty Holdings</option>
+                    <option value="G-CostMgmt">G-Cost Management</option>
+                    <option value="G-FINOPS">G-Finance OPS</option>
+                    <option value="M-FinExe">M-Finance Execution</option>
+                    <option value="M-Other">M-Other Finance</option>
+                    <option value="M-CostR">M-Cost Reporting </option>
+                    <option value="M-Retail">M-Retail Finance </option>
+                    <option value="M-STANLIB">Stanlib </option>
+                    <option value="ACCPAY">Accounts Payable </option>
+                    <option value="CCCAE">Cost Control CAE </option>
+                    <option value="CCIT">Cost Control IT </option>
+                    <option value="CCManex">Cost Control Manex </option>
+                    <option value="CCOPS">Cost control Operations </option>
+                    <option value="CCSC">Super Commissions </option>
+                    <option value="COMM">Commissions </option>
+                    <option value="FRANK">FRANK.NET </option>
+                    <option value="GBKL">SCollective </option>
+                    <option value="GP1">GP1 </option>
+                    <option value="GP2">GP2 </option>
+                    <option value="GRESS">WPM Finance </option>
+                    <option value="GRPFIN">Group Finance </option>
+                    <option value="HRFIN">HR Finance </option>
+                    <option value="INVACC">Investment accounting </option>
+                    <option value="LASM">SAsset Mger </option>
+                    <option value="LDST">SMulti Mger </option>
+                    <option value="LIBCORP">Liberty Corporate </option>
+                    <option value="LIBFIN">Libfin Finance </option>
+                    <option value="LISP">LISP </option>
+                    <option value="MFCL">SWealth Mger </option>
+                    <option value="MHLD">STANLIB Limited </option>
+                    <option value="REINSURE">Re-insurance </option>
+                    <option value="RETAIL-B">Retail Bank Admin </option>
+                    <option value="RETAIL-OP">Retail Ops Finance </option>
+                    <option value="SFMJ">SJersery </option>
+                    <option value="SLES">SLESOTHO </option>
+                    <option value="TAX">Group Tax </option>
+                    </Select>
+                    </FormControl>
+              </Grid>
 
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                fullWidth
-                id="blacklineTeam"
-                name="blacklineTeam"
-                label="Blackline Team"
-                //autoComplete="address"
-                size="small"
-              />
-            </Grid>
-
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" onClick={imSure} />}
-                label="Accept changes made"
+                label="Accept changes"
               />
           </Grid>
 
@@ -700,7 +722,7 @@ export default function SignUp() {
             className={classes.submit}
             disabled={onOff}
           >
-            Edit details
+            ADD
           </Button>
           <Grid container justify="flex-end">
             
